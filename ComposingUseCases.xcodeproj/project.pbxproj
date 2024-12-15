@@ -16,6 +16,14 @@
 		5F0B95362D0F2ED500ECD160 /* ComposingUseCasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B95352D0F2ED500ECD160 /* ComposingUseCasesTests.swift */; };
 		5F0B95402D0F2ED500ECD160 /* ComposingUseCasesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B953F2D0F2ED500ECD160 /* ComposingUseCasesUITests.swift */; };
 		5F0B95422D0F2ED500ECD160 /* ComposingUseCasesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B95412D0F2ED500ECD160 /* ComposingUseCasesUITestsLaunchTests.swift */; };
+		5F0B954F2D0F2F7200ECD160 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B954E2D0F2F7200ECD160 /* LoginUseCase.swift */; };
+		5F0B95512D0F2FEF00ECD160 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B95502D0F2FEF00ECD160 /* LoginPresenter.swift */; };
+		5F0B95532D0F303900ECD160 /* CrashlyticsLoginTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B95522D0F303900ECD160 /* CrashlyticsLoginTracker.swift */; };
+		5F0B95552D0F309E00ECD160 /* FirebaseAnalyticsLoginTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B95542D0F309E00ECD160 /* FirebaseAnalyticsLoginTracker.swift */; };
+		5F0B95572D0F331800ECD160 /* LoginUseCaseOutputComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B95562D0F331800ECD160 /* LoginUseCaseOutputComposerTests.swift */; };
+		5F0B95592D0F347D00ECD160 /* LoginUseCaseOutputComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B95582D0F347D00ECD160 /* LoginUseCaseOutputComposer.swift */; };
+		5F0B955B2D0F420900ECD160 /* LoginUseCaseFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B955A2D0F420900ECD160 /* LoginUseCaseFactoryTests.swift */; };
+		5F0B955D2D0F423500ECD160 /* LoginUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B955C2D0F423500ECD160 /* LoginUseCaseFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		5F0B953B2D0F2ED500ECD160 /* ComposingUseCasesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComposingUseCasesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F0B953F2D0F2ED500ECD160 /* ComposingUseCasesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposingUseCasesUITests.swift; sourceTree = "<group>"; };
 		5F0B95412D0F2ED500ECD160 /* ComposingUseCasesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposingUseCasesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5F0B954E2D0F2F7200ECD160 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		5F0B95502D0F2FEF00ECD160 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		5F0B95522D0F303900ECD160 /* CrashlyticsLoginTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashlyticsLoginTracker.swift; sourceTree = "<group>"; };
+		5F0B95542D0F309E00ECD160 /* FirebaseAnalyticsLoginTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsLoginTracker.swift; sourceTree = "<group>"; };
+		5F0B95562D0F331800ECD160 /* LoginUseCaseOutputComposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseOutputComposerTests.swift; sourceTree = "<group>"; };
+		5F0B95582D0F347D00ECD160 /* LoginUseCaseOutputComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseOutputComposer.swift; sourceTree = "<group>"; };
+		5F0B955A2D0F420900ECD160 /* LoginUseCaseFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseFactoryTests.swift; sourceTree = "<group>"; };
+		5F0B955C2D0F423500ECD160 /* LoginUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,10 @@
 		5F0B951D2D0F2ED300ECD160 /* ComposingUseCases */ = {
 			isa = PBXGroup;
 			children = (
+				5F0B95602D0F45C100ECD160 /* Analytics Wrappers */,
+				5F0B955E2D0F459800ECD160 /* Business Logic */,
+				5F0B955F2D0F45B900ECD160 /* Presenter */,
+				5F0B95612D0F45D100ECD160 /* Main */,
 				5F0B951E2D0F2ED300ECD160 /* AppDelegate.swift */,
 				5F0B95202D0F2ED300ECD160 /* SceneDelegate.swift */,
 				5F0B95222D0F2ED300ECD160 /* ViewController.swift */,
@@ -113,6 +133,7 @@
 		5F0B95342D0F2ED500ECD160 /* ComposingUseCasesTests */ = {
 			isa = PBXGroup;
 			children = (
+				5F0B95622D0F461E00ECD160 /* Main */,
 				5F0B95352D0F2ED500ECD160 /* ComposingUseCasesTests.swift */,
 			);
 			path = ComposingUseCasesTests;
@@ -125,6 +146,49 @@
 				5F0B95412D0F2ED500ECD160 /* ComposingUseCasesUITestsLaunchTests.swift */,
 			);
 			path = ComposingUseCasesUITests;
+			sourceTree = "<group>";
+		};
+		5F0B955E2D0F459800ECD160 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				5F0B954E2D0F2F7200ECD160 /* LoginUseCase.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		5F0B955F2D0F45B900ECD160 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5F0B95502D0F2FEF00ECD160 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5F0B95602D0F45C100ECD160 /* Analytics Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				5F0B95522D0F303900ECD160 /* CrashlyticsLoginTracker.swift */,
+				5F0B95542D0F309E00ECD160 /* FirebaseAnalyticsLoginTracker.swift */,
+			);
+			path = "Analytics Wrappers";
+			sourceTree = "<group>";
+		};
+		5F0B95612D0F45D100ECD160 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5F0B95582D0F347D00ECD160 /* LoginUseCaseOutputComposer.swift */,
+				5F0B955C2D0F423500ECD160 /* LoginUseCaseFactory.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5F0B95622D0F461E00ECD160 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5F0B95562D0F331800ECD160 /* LoginUseCaseOutputComposerTests.swift */,
+				5F0B955A2D0F420900ECD160 /* LoginUseCaseFactoryTests.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +324,13 @@
 			files = (
 				5F0B95232D0F2ED300ECD160 /* ViewController.swift in Sources */,
 				5F0B951F2D0F2ED300ECD160 /* AppDelegate.swift in Sources */,
+				5F0B95532D0F303900ECD160 /* CrashlyticsLoginTracker.swift in Sources */,
 				5F0B95212D0F2ED300ECD160 /* SceneDelegate.swift in Sources */,
+				5F0B955D2D0F423500ECD160 /* LoginUseCaseFactory.swift in Sources */,
+				5F0B95592D0F347D00ECD160 /* LoginUseCaseOutputComposer.swift in Sources */,
+				5F0B954F2D0F2F7200ECD160 /* LoginUseCase.swift in Sources */,
+				5F0B95552D0F309E00ECD160 /* FirebaseAnalyticsLoginTracker.swift in Sources */,
+				5F0B95512D0F2FEF00ECD160 /* LoginPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +338,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0B955B2D0F420900ECD160 /* LoginUseCaseFactoryTests.swift in Sources */,
+				5F0B95572D0F331800ECD160 /* LoginUseCaseOutputComposerTests.swift in Sources */,
 				5F0B95362D0F2ED500ECD160 /* ComposingUseCasesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
